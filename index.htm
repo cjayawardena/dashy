@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<script type="text/javascript">
+  
+  function tvFunction() {
+    document.getElementById("myframe").src = "http://192.168.2.6:8989";
+  }
+  function movieFunction() {
+    document.getElementById("myframe").src = "http://192.168.2.6:7878";
+  }
+  function musicFunc() {
+    document.getElementById("myframe").src = "http://192.168.2.6:8686";
+  }
+  
+   function QBTFunc() {
+    document.getElementById("myframe").src = "http://192.168.2.6:8080";
+  }
+  function JellyFinFunc() {
+    document.getElementById("myframe").src = "http://192.168.2.6:8096";
+  }
+
+</script>
+  <body> 
+    <div>
+      <button onclick="tvFunction()">TV</button>
+      <button onclick="movieFunction()">Movie</button>
+      <button onclick="musicFunc()">Music</button>
+      <!--<button onclick="QBTFunc()">Torrent</button>-->
+      <button onclick="JellyFinFunc()">Jellyfin</button>
+    </div>
+    <br >
+    <div>
+      <iframe id="myframe" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+  </body>
+</html>
