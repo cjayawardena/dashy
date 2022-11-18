@@ -1,3 +1,3 @@
 FROM nginx
-COPY dashy/index.htm /usr/share/nginx/html/
+COPY ./index.htm /usr/share/nginx/html/
 EXPOSE 8080
