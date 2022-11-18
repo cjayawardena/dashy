@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('Build /Shell Script') {
+      steps {
+        sh 'docker build -f dashy/Dockerfile .'
+      }
+    }
+
   }
 }
