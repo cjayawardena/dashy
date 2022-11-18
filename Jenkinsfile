@@ -16,7 +16,7 @@ pwd'''
 
     stage('Build /Shell Script') {
       steps {
-        sh 'docker build -f dashy/Dockerfile .'
+        sh 'docker build -f ./Dockerfile .'
       }
     }
 
