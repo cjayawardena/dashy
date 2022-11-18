@@ -9,8 +9,7 @@ pipeline {
 
     stage('shell') {
       steps {
-        sh '''ls
-pwd'''
+        sh ' ls -ld "$PWD/"*'
       }
     }
 
