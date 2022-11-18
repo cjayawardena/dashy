@@ -8,19 +8,9 @@ pipeline {
     }
 
     stage('shell') {
-      parallel {
-        stage('shell') {
-          steps {
-            sh 'ls'
-          }
-        }
-
-        stage('Shell') {
-          steps {
-            sh 'pwd'
-          }
-        }
-
+      steps {
+        sh '''ls
+pwd'''
       }
     }
 
