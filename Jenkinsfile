@@ -15,7 +15,7 @@ pipeline {
 
     stage('Build /Shell Script') {
       steps {
-        sh 'docker build -f ./Dockerfile .'
+        sh 'docker build -t /var/jenkins_home/workspace/dashy_main/Dockerfile .'
       }
     }
 
